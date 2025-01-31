@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>My Eshop</title>
+     <link rel="stylesheet" href="Eshop.css">
+     <script src="./jq.js"></script>
+     <script>
+            $(document).ready(function() {
+            // Add to Cart functionality
+            var cartCount = 0;
+            $(".btn").click(function() {
+                alert("Product added to cart!");
+                cartCount++;
+                $("#cart").text(cartCount);
+            });
+            $(".wishlist-btn").click(function() {
+                alert("Product added to wishlist!");
+            });
+            $("#login-form").submit(function(event) {
+                event.preventDefault();
+                var username = $("#username").val();
+                var password = $("#password").val();
+                if (username && password) {
+                    alert("Login successful! Welcome, " + username);
+                } else {
+                    alert("Please enter username and password.");
+                }
+            });
+        });
+    </script>
+</head>
+</head>
+ <body>
+  <div class="width-100 top-header">
+  <div class="container">
+    <div class="width-50">
+      <p class="head1p1 headquote">India's Fastest Growing Online Shopping Destination</p>
+    </div>
+    <div class="width-50">
+      <ul class="head1ul cashback-sect">
+        <li>
+          <i class="rf" aria-hidden="true"></i>
+          <a class="head1mr" href="#">Refer Your Friend And Earn Rs. 500 Cashback</a>
+        </li>
+        <li>
+          <i class="f" aria-hidden="true"></i>
+          <a href="#"> Download App</a>
+        </li>
+      </ul>
+      </p>
+    </div>
+  </div>
+</div>
+<div class="width-100 search-panel">
+  <div class="container">
+    <div class="width-20">
+      <img src="D:\Programming\HSD\HsD.png" class="logo" height="50px">
+    </div>
+    <div class="width-50">
+      <input class="search-textbox" type="text" Placeholder="Search for products, brand and more">
+      <button class="search-button">
+      <svg width="20" height="20" viewBox="0 0 17 18" class="" xmlns="http://www.w3.org/2000/svg"><g fill="#2874F1" fill-rule="evenodd"><path class="_34RNph" d="m11.618 9.897l4.225 4.212c.092.092.101.232.02.313l-1.465 1.46c-.081.081-.221.072-.314-.02l-4.216-4.203"></path><path class="_34RNph" d="m6.486 10.901c-2.42 0-4.381-1.956-4.381-4.368 0-2.413 1.961-4.369 4.381-4.369 2.42 0 4.381 1.956 4.381 4.369 0 2.413-1.961 4.368-4.381 4.368m0-10.835c-3.582 0-6.486 2.895-6.486 6.467 0 3.572 2.904 6.467 6.486 6.467 3.582 0 6.486-2.895 6.486-6.467 0-3.572-2.904-6.467-6.486-6.467"></path></g></svg>
+        <i class="search" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div class="width-30">
+      <ul class="cart-sect">
+        <li>
+          <i class="heart-o" aria-hidden="true"></i>
+          <a class="head1mr" href="#">Whislist</a>
+        </li>
+        <li>
+          <i class="user-circle-o" aria-hidden="true"></i>
+          <a href="./login.html">Login & Signup</a>
+        </li>
+        <li>
+          <i class="shopping-cart"aria-hidden="true"></i>
+          <a href="#">Cart -<span id="cart">(0)</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="width-100">
+  <div class="container">
+    <ul class="main-menu">
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="./phones.html">Phones</a>
+      </li>
+      <li>
+        <a href="#">Home Appliances</a>
+      </li>
+      <li>
+        <a href="#">Grocery</a>
+      </li>
+      <li>
+        <a href="#">Medicines</a>
+      </li>
+      <li>
+        <a href="./clothes.html">Clothes</a>
+      </li>
+      <li>
+        <a href="#">Other Electronics</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="container">
+  <img class="b" src="D:\Programming\HSD\mob.jpeg">
+        <a href="#">
+          <img class="b" src="D:\Programming\HSD\e.webp">
+        </a>
+        <a href="#">
+          <img class="b" src="D:\Programming\HSD\m.jpeg">
+        </a>
+        <a href="#">
+          <img class="b" src="D:\Programming\HSD\g.jpg">
+        </a>
+</div>
+<div class="width-100 margin-top-50">
+  <div class="container">
+    <div class="width-25">
+      <div class="product-section">
+        <div class="product-border">
+          <div class="product-img-center">
+            <a href="#">
+              <img class="product-img" src="D:\Programming\HSD\ip.png">
+            </a>
+          </div>
+          <div>
+            <p class="product-name">
+              <a href="#">New iphone 15 Max Pro 64 GB</a>
+            </p>
+            <p class="product-rating">  
+              <span>5 star</span>
+            </p>
+            <p class="product-price">
+              <span class="product-discounted-price">Rs.1,05,549.00</span>
+              <span class="product-original-price">Rs.154</span>
+              <span class="product-discount">15%OFF</span>
+          </div>
+          <button class="btn" >Add to cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="width-25">
+      <div class="product-section">
+        <div class="product-border">
+          <div class="product-img-center">
+            <a href="#">
+              <img class="product-img" src="D:\Programming\HSD\rmn.jpeg">
+            </a>
+          </div>
+          <div>
+            <p class="product-name">
+              <a href="#">New Realme narzo N53</a>
+            </p>
+            <p class="product-rating">
+             <span>4.5 star</span>
+            </p>
+            <p class="product-price">
+              <span class="product-discounted-price">Rs.11,999.00</span>
+              <span class="product-original-price">Rs.12000</span>
+              <span class="product-discount">1%OFF</span>
+          </div>
+           <button class="btn" >Add to cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="width-25">
+      <div class="product-section">
+        <div class="product-border">
+          <div class="product-img-center">
+            <a href="#">
+              <img class="product-img" src="D:\Programming\HSD\hph.jpg">
+            </a>
+          </div>
+          <div>
+            <p class="product-name">
+              <a href="#">New Ptron aristo in-ear headphone with noise cancellation</a>
+            </p>
+            <p class="product-rating">
+            <span>4.8 star</span>
+            </p>
+            <p class="product-price">
+              <span class="product-discounted-price">Rs.549.00</span>
+              <span class="product-original-price">Rs.799</span>
+              <span class="product-discount">15%OFF</span>
+          </div>
+           <button class="btn" >Add to cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="width-25">
+      <div class="product-section">
+        <div class="product-border">
+          <div class="product-img-center">
+            <a href="#">
+              <img class="product-img" src="D:\Programming\HSD\rogs.jpeg">
+            </a>
+          </div>
+          <div>
+            <p class="product-name">
+              <a href="#">New Asus ROG Strix</a>
+            </p>
+            <p class="product-rating">
+              <span>4.8 star</span>
+            </p>
+            <p class="product-price">
+              <span class="product-discounted-price">Rs.83,999.00</span>
+              <span class="product-original-price">Rs.95259</span>
+              <span class="product-discount">20%OFF</span>
+          </div>
+           <button class="btn" >Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
